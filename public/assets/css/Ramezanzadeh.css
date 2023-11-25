@@ -1,0 +1,94 @@
+/*
+
+sabioweb
+
+
+---------------------------------------------
+Table of contents
+------------------------------------------------
+1. Typography
+2. General
+3. Nav
+4. Hero Carousel
+5. Accordion
+6. Shop
+7. Product
+8. Carousel Hero
+9. Carousel Brand
+10. Services
+11. Contact map
+12. Footer
+13. Small devices (landscape phones, 576px and up)
+14. Medium devices (tablets, 768px and up)
+15. Large devices (desktops, 992px and up)
+16. Extra large devices (large desktops, 1200px and up)
+--------------------------------------------- */
+@font-face {
+    font-family: "primaryfont";
+    src: url("/public/assets/webfonts/IRANSansWeb_Bold.ttf")
+}
+/* template css */
+:root{
+    --primary: #2196F3;
+    --secondary: #FF5722;
+    --primarytext: #212121;
+    --light:#BBDEFB;
+    --bs-gray: #efefef;
+}
+.text-primary{
+    color: var(--primary) !important;
+}
+.text-secondary{
+    color: var(--secondary) !important;
+}
+/* Typography */
+body, ul, li, p, a, label, input, div {
+  font-family: "primaryfont";
+
+}
+.h1 {
+  font-family: "primaryfont";
+
+}
+.h2 {
+  font-family: "primaryfont";
+
+}
+.h3 {
+  font-family: "primaryfont";
+}
+/* General */
+.logo { font-weight: 500 !important;font-size: 2rem}
+
+/* Nav */
+#sabioweb_nav_top { min-height: 40px;}
+#sabioweb_nav_top * { font-size: .8rem !important;}
+#sabioweb_main_nav a { color: var(--secondary); font-size:1.1rem }
+#sabioweb_main_nav a:hover { color: var(--primary); font-weight: 500 !important}
+#sabioweb_main_nav .navbar .nav-icon { margin-right: 2px;}
+
+/* Hero Carousel */
+#sabiowebherocarousel { background: var(--bs-gray) !important;}
+/* Shop */
+.shop-top-menu a:hover { color:  var(--primary) !important;}
+/* Carousel Hero */
+#sabioweb-hero-carousel .carousel-indicators li {
+  margin-top: -50px;
+  background-color: var(--secondary);
+}
+
+
+/* section 2 */
+.card{
+    background-color: white;
+    transition: 0.5s;
+}
+.card:hover{
+    background-color: var(--secondary);
+}
+.paint-text{
+    transition: 0.3s;
+}
+.paint-text:hover{
+   color: white;
+}
