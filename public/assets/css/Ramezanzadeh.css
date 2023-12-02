@@ -29,7 +29,7 @@ Table of contents
 }
 /* template css */
 :root{
-    --primary: #2196F3;
+    --primary: rgba(243, 124, 33, 0.07);
     --secondary: #FF5722;
     --primarytext: #212121;
     --light:#BBDEFB;
@@ -91,11 +91,11 @@ body, ul, li, p, a, label, input, div {
 
 
 /* section 2 */
-.card{
+#cp .card{
     background-color: white;
     transition: 0.5s;
 }
-.card:hover{
+#cp .card:hover{
     background-color: var(--secondary);
 }
 .paint-text{
@@ -231,3 +231,107 @@ body, ul, li, p, a, label, input, div {
 .contact-info ul li:last-child {
     margin-bottom: 0
 }
+#primarymenu{
+    position:absolute;
+    top:0;
+    margin:auto;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100%;
+
+}
+#primarymenu  li{
+    margin:0 20px;
+    position:relative;
+}
+#primarymenu  li a{
+    text-decoration:none;
+    display:block;
+    padding:5px 0;
+    font-family:'Open Sans';
+    font-size:16px;
+    line-height:1;
+    font-weight:bold;
+    position:relative;
+    z-index:1;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+    to right,
+    var(--primary),
+    var(--primary) 50%,
+    var(--secondary) 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    transition: all 0.3s ease-in-out;
+
+}
+#primarymenu  li a:before{
+    display:block;
+    content:'';
+    width:0;
+    height:3px;
+    bottom:5px;
+    left:0;
+    bottom:-3px;
+    z-index:0;
+    position:absolute;
+    background:var(--primary);
+    transition: all 0.3s ease-in-out;
+
+}
+
+#primarymenu  li a:hover{
+    background-position: 0%;
+}
+#primarymenu  li a:before{
+    width:100%;
+}
+
+
+/* ts section */
+#cotn .card-ts-1{
+    background-color: white;
+    opacity: .8;
+    transition: 0.5s;
+}
+#cotn .card-ts-1:hover{
+    transition: 1s;
+    opacity: 1;
+    color: white;
+    background-image: url("../img/slider/slider1.5.jpg");
+}
+#cotn .card-ts-2{
+    background-color: white;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+#cotn .card-ts-2:hover{
+    transition: 1s;
+    opacity: 1;
+    color: white;
+    background-image: url("../img/slider/slider1.4.jpg");
+}
+#cotn .card-ts-3{
+    background-color: white;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+#cotn .card-ts-3:hover{
+    transition: 1s;
+    opacity: 1;
+    color: white;
+    background-image: url("../img/slider/slider1.5.jpg");}
+#cotn .card-ts-4{
+    background-color: white;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+#cotn .card-ts-4:hover{
+    transition: 1s;
+    opacity: 1;
+    color: white;
+    background-image: url("../img/slider/slider1.4.jpg");}

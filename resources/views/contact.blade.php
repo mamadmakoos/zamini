@@ -25,6 +25,7 @@
         </div>
     </section>
     <!-- end section 1 -->
+
     <!-- start ontact us Area ( contact section 2 ) -->
     <section class="contact-area pt-5 pb-3 text-center">
         <div class="container">
@@ -34,7 +35,7 @@
                 <p> هرگونه پیشنهاد را با ما درمیان بگذارید</p>
             </div>
 
-            <div class="row p-5">
+            <div class="row p-lg-5">
                 <div class="col-lg-5 col-md-12 align-self-center">
                     <div class="contact-info">
                         <ul>

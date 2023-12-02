@@ -79,7 +79,7 @@
 
         <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="sabioweb_main_nav">
             <div class="flex-fill">
-                <ul class="nav navbar-nav d-flex justify-content-center mx-lg-auto">
+                <ul id="primarymenu" class="nav navbar-nav d-flex justify-content-center mx-lg-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('home') }}">خانه</a>
                     </li>

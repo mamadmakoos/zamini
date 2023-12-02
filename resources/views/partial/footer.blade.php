@@ -90,6 +90,7 @@
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/lightbox.js"></script>
 <script src="assets/js/Ramezanzadeh.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/custom.js"></script>
 <!-- End Script -->
 </body>

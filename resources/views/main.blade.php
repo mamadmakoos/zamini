@@ -24,8 +24,22 @@
     </div>
     <!-- Close Modal -->
 
-    <!-- Start Banner Hero -->
-    <div id="sabiowebherocarousel" class="bg-dark" data-bs-ride="carousel">
+    <!-- Start slider Hero -->
+    <div id="carouse" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{asset('assets/img/slider/slider1.5.jpg')}}" class="d-block w-100 vh-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('assets/img/slider/slider1.3.jpg')}}" class="d-block w-100 vh-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('assets/img/slider/slider1.4.jpg')}}" class="d-block w-100 vh-100" alt="">
+            </div>
+        </div>
+    </div>
+{{--
+    <div id="sabiowebherocarousel" class="bg-dark" data-bs-ride="carousel ">
                 <div class="container">
                     <div class="row text-white">
                         <div class="mx-auto col-md-8  col-lg-6 order-lg-last">
@@ -45,10 +59,81 @@
                     </div>
                 </div>
     </div>
-    <!-- End Banner Hero -->
+--}}
+    <!-- End slider Hero -->
+
+    {{-- test section--}}
+    <section id="cotn">
+    <div class="container text-center p-5 ">
+        <div class="row justify-content-start">
+            <div class="col-6">
+                <div class="card card-ts-1 shadow mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                            <div class="card-body">
+                                <h3 class="card-title">رنگ اکریلیک</h3>
+                                <p class="card-text">رنگ اکریلیک انعطاف‌پذیر است و به همین علت روی تمام سطوح از جمله مدل‌های خمیر، کاغذ، پارچه و کفش قابل استفاده است. رنگ‌های اکریلیک پایه آب نسل جدید از رنگ‌های ساختمانی می‌باشند که با توجه به مسائل زیست‌محیطی و عدم استفاده از حلال‌های آلی و مواد مضر کاربردی این نوع رنگ‌ها روبه افزایش است.</p>
+                                <p class="card-text"><small class="text-body-secondary"><a class="btn btn-outline-primary">ادامه مطلب</a></small></p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-6">
+            </div>
+            <div class="col-6">
+                <div class="card card-ts-2 shadow mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="card-body">
+                            <h3 class="card-title">رنگ اپوکسی</h3>
+                            <p class="card-text">رنگ اپوکسی یک نوع رنگ صنعتی است که از ترکیب دو ماده شیمیایی اپوکسی و هاردنر تشکیل می‌شود. این رنگ پس از خشک شدن، یک پوشش سخت و محکم ایجاد می‌کند که در برابر مواد شیمیایی، آب، سایش و ضربه مقاوم است. رنگ اپوکسی کاربردهای مختلفی دارد.</p>
+                            <p class="card-text"><small class="text-body-secondary"><a class="btn btn-outline-primary">ادامه مطلب</a></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-start">
+            <div class="col-6">
+                <div class="card card-ts-3 shadow mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="card-body">
+                            <h3 class="card-title">رنگ وینیلی</h3>
+                            <p class="card-text">محصول رنگ رویه وینیلی یک رنگ رویه یک جزیی محافظ خوردگی بر پایه رزین وینیل کلراید می باشد . خشک شدن سریع و راحتی کاربرد با ابزار مختلف از مشخصه های بارز کاربردی این رنگ می باشد . رنگ رویه وینیلی با توجه به ساختار و ترکیب خود محافظت های فوق العاده بر روی سطوح بخوبی آماده سازی شده در محیط های صنعتی و دریایی ایجاد می کند .</p>
+                            <p class="card-text"><small class="text-body-secondary"><a class="btn btn-outline-primary">ادامه مطلب</a></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-6">
+            </div>
+            <div class="col-6">
+                <div class="card card-ts-4 shadow mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="card-body">
+                            <h3 class="card-title">رنگ پلی اورتان</h3>
+                            <p class="card-text">رنگ پلی اورتان عضوی از خانواده رنگ‌های صنعتی است. این رنگ دارای ساختار پلیمری بوده و ضمن باکیفیت بودن، مقاومت بالایی هم دارد و برای پوشش دادن سطوح مختلف از آن به طور گسترده‌ای استفاده ‌می‌شود. عموما رنگ‌های پلی اورتان به شکل روکش نهایی روی پرایمرها (روکش اولیه) قرار گرفته و ساختاری یکدست با مقاومت بالا را ایجاد می کند.</p>
+                            <p class="card-text"><small class="text-body-secondary"><a class="btn btn-outline-primary">ادامه مطلب</a></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    {{-- test section --}}
 
     <!-- start section 2 -->
-    <section class="mt-5">
+    <section id="cp" class="mt-5">
         <div class="container">
             <div class="row text-center">
                 <h3 class="text-primary">انواع رنگ ها</h3>
@@ -160,7 +245,7 @@
     <!-- start section 5 -->
     <section id="banershome">
         <div class="container p-5">
-            <div class="row p-2">
+            <div class="row p-2 align-items-center">
                 <h4 class="text-center text-primary">
                     بنر های سایت
                 </h4>
@@ -172,7 +257,7 @@
                 </div>
                 <div class="col-md-3 col-lg-3 p-1">
                    <a href="#" >
-                       <img class="img-fluid bg-primary-subtle p-0 m-0" src="{{ asset('assets/img/SabioWeb/baner2.png  ') }}" alt="">
+                       <img class="img-fluid bg-primary-subtle p-0 m-0" src="{{ asset('assets/img/SabioWeb/tbanner1.jpg  ') }}" alt="">
                    </a>
                 </div>
                 <div class="col-md-3 col-lg-3 p-1">
@@ -182,7 +267,7 @@
                 </div>
                 <div class="col-md-3 col-lg-3 p-1">
                     <a href="#" >
-                        <img class="img-fluid bg-primary-subtle p-0 m-0" src="{{ asset('assets/img/SabioWeb/baner2.png  ') }}" alt="">
+                        <img class="img-fluid bg-primary-subtle p-0 m-0" src="{{ asset('assets/img/SabioWeb/tbanner2.jpg  ') }}" alt="">
                     </a>
                 </div>
             </div>
@@ -271,7 +356,7 @@
                 <p> هرگونه پیشنهاد را با ما درمیان بگذارید</p>
             </div>
 
-            <div class="row p-5">
+            <div class="row p-lg-5">
                 <div class="col-lg-5 col-md-12 align-self-center">
                     <div class="contact-info">
                         <ul>
