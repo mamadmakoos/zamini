@@ -15,8 +15,8 @@ class HomeController extends Controller
 //            , ['setting'=>$setting]
         );
     }
-    public  function aboutUs(){
-        return view('about');
+    public  function contactUs(){
+        return view('contact');
     }
     public  function weblog(){
         return view('weblog');

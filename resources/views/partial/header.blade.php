@@ -19,6 +19,9 @@
 
     <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
 
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
+
     <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="assets/css/Ramezanzadeh.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -26,6 +29,10 @@
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/css/Ramezanzadeh.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 
     @yield("meta")
@@ -43,7 +50,7 @@
         <div class="w-100 d-flex justify-content-between">
             <div>
                 <i class="fa fa-envelope mx-2"></i>
-                <a class="navbar-sm-brand text-light text-decoration-none" href="">info@roshani.com</a>
+                <a class="navbar-sm-brand text-light text-decoration-none" href="">info@Posheshsazan.com</a>
                 <i class="fa fa-phone mx-2"></i>
                 <a class="navbar-sm-brand text-light text-decoration-none" href="tel:02133138164">021-33138164</a>
             </div>
@@ -63,7 +70,7 @@
     <div class="container d-flex justify-content-between align-items-center">
 
         <a class="navbar-brand text-primary logo h1 align-self-center" href="{{route('home')}}">
-            روشنی
+            پوشش سازان
         </a>
 
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#sabioweb_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,7 +84,7 @@
                         <a class="nav-link" href="{{ route('home') }}">خانه</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">درباره ما</a>
+                        <a class="nav-link" href="{{ route('contact_us') }}">تماس با ما</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">وبلاگ</a>
@@ -101,7 +108,6 @@
                 </a>
                 <a class="nav-icon position-relative text-decoration-none" href="#">
                     <i class="fa fa-fw fa-cart-arrow-down text-dark m-1"></i>
-                    <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
                 </a>
                 <a class="nav-icon position-relative text-decoration-none" href="#">
                     <i class="fa fa-fw fa-user text-dark m-1"></i>
