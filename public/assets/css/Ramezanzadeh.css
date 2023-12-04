@@ -29,7 +29,7 @@ Table of contents
 }
 /* template css */
 :root{
-    --primary: rgba(243, 124, 33, 0.07);
+    --primary: #2196F3;
     --secondary: #FF5722;
     --primarytext: #212121;
     --light:#BBDEFB;
@@ -293,6 +293,7 @@ body, ul, li, p, a, label, input, div {
 
 
 /* ts section */
+
 #cotn .card-ts-1{
     background-color: white;
     opacity: .8;
