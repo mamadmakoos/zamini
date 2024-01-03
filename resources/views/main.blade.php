@@ -1,6 +1,6 @@
 @extends("layout.master")
 @section("meta")
-    <title> پوشش سازان | فروش انواع رنگ صنعتی</title>
+     <title> پوشش سازان </title>
 
 @endsection
 @section("content")
@@ -27,11 +27,17 @@
     <!-- Start slider Hero -->
     <div id="carouse" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="{{asset('assets/img/slider/slider1.1.png')}}" class="d-block w-100 vh-100" alt="">
+            </div>
             <div class="carousel-item active">
-                <img src="{{asset('assets/img/slider/slider1.5.jpg')}}" class="d-block w-100 vh-100" alt="">
+                <img src="{{asset('assets/img/slider/slider1.2.jpg')}}" class="d-block w-100 vh-100" alt="">
             </div>
             <div class="carousel-item">
                 <img src="{{asset('assets/img/slider/slider1.3.jpg')}}" class="d-block w-100 vh-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('assets/img/slider/slider1.5.JPG')}}" class="d-block w-100 vh-100" alt="">
             </div>
             <div class="carousel-item">
                 <img src="{{asset('assets/img/slider/slider1.4.jpg')}}" class="d-block w-100 vh-100" alt="">
@@ -61,6 +67,25 @@
     </div>
 --}}
     <!-- End slider Hero -->
+
+    <!-- start section 3 -->
+    <section id="contactsm" class=" bg-dark" style="margin-top: -5px">
+        <div class="container p-5 " >
+            <div class="row text-center text-secondary">
+                <div class="col-md-7">
+                    <h3 class="">برای کسب اطلاعات بیشتر در سایت جست و جو کنید</h3>
+                </div>
+                <div class="col-md-5 text-center d-inline">
+                    <form  method="get" class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="جست وجو" aria-label="جست وجو">
+                        <button class="btn btn-outline-primary" type="submit"><i class="fa fa-fw fa-search-plus"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section 3 -->
+
 
     {{-- test section--}}
     <section id="cotn">
@@ -141,9 +166,9 @@
                 <div class="col-md-6 col-lg-4  service-paint p-3" >
                     <a href="#" class="text-decoration-none ">
                         <div class="card shadow" style="width: 18rem;">
-                            <img src="/assets/img/section2/anticorossion.jpg" class="card-img-top" alt="...">
+                            <img src="{{ asset('/assets/img/section2/anticorossion.jpg') }}" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h4 class="card-text paint-text ">رنگ ضد زنگ</h4>
+                                <h4 class="card-text paint-text " style="font-size: 17px !important;">پوشش های محافظتی ضد خوردگی</h4>
                             </div>
                         </div>
                     </a>
@@ -151,9 +176,9 @@
                 <div class="col-md-6 col-lg-4  service-paint p-3" >
                     <a href="#" class="text-decoration-none">
                         <div class="card shadow" style="width: 18rem;">
-                            <img src="/assets/img/section2/decorative.jpg" class="card-img-top" alt="...">
+                            <img src="{{ asset('/assets/img/section2/cat3.jpg') }}" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h4 class="card-text paint-text">رنگ دکوراتیو</h4>
+                                <h4 class="card-text paint-text" style="font-size: 17px !important;">پوشش های کف</h4>
                             </div>
                         </div>
                     </a>
@@ -161,9 +186,9 @@
                 <div class="col-md-6 col-lg-4  service-paint p-3" >
                     <a href="#" class="text-decoration-none">
                         <div class="card shadow" style="width: 18rem;">
-                            <img src="/assets/img/section2/industrial.jpg" class="card-img-top" alt="...">
+                            <img src="{{ asset('/assets/img/section2/cat2.jpg') }}" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h4 class="card-text paint-text">رنگ ساختمانی</h4>
+                                <h4 class="card-text paint-text" style="font-size: 17px !important;">پوشش های صنعتی</h4>
                             </div>
                         </div>
                     </a>
@@ -171,9 +196,20 @@
                 <div class="col-md-6 col-lg-4  service-paint p-3" >
                     <a href="#" class="text-decoration-none">
                         <div class="card shadow" style="width: 18rem;">
-                            <img src="/assets/img/section2/pipeline.jpg" class="card-img-top" alt="...">
+                            <img src="{{ asset('/assets/img/section2/pipeline.jpg') }}" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h4 class="card-text paint-text">رنگ لوله صنعتی</h4>
+                                <h4 class="card-text paint-text" style="font-size: 17px !important;">پوشش های مخصوص لوله</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-4  service-paint p-3" >
+                    <a href="#" class="text-decoration-none">
+                        <div class="card shadow" style="width: 18rem;">
+                            <img src="{{ asset('/assets/img/section2/cat1.jpg') }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-text paint-text" style="font-size: 17px !important;">پوشش های دریایی</h4>
                             </div>
                         </div>
                     </a>
@@ -181,23 +217,15 @@
                 <div class="col-md-6 col-lg-4  service-paint p-3" >
                     <a href="#" class="text-decoration-none">
                         <div class="card shadow" style="width: 18rem;">
-                            <img src="/assets/img/section2/powder2.jpg" class="card-img-top" alt="...">
+                            <img src="{{ asset('/assets/img/section2/industrial.jpg') }}" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h4 class="card-text paint-text">رنگ پودری</h4>
+                                <h4 class="card-text paint-text" style="font-size: 17px !important;">رنگ های ساختمانی</h4>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-6 col-lg-4  service-paint p-3" >
-                    <a href="#" class="text-decoration-none">
-                        <div class="card shadow" style="width: 18rem;">
-                            <img src="/assets/img/section2/floor.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h4 class="card-text paint-text">رنگ زمین</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+
+
 
 
             </div>
@@ -401,4 +429,6 @@
 
 @endsection
 
+@section('src')
 
+@endsection

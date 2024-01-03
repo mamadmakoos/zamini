@@ -2,11 +2,7 @@
 <html lang="fa" dir="rtl">
 <head>
     {{-- for seo --}}
-    <META NAME="robots" CONTENT="noindex">
-    <meta name="robots" content="noindex">
-    <META NAME="robots" CONTENT="nofollow">
-    <meta name="robots" content="nofollow">
-    <META NAME="robots" CONTENT="noindex,nofollow">
+
     <meta name="robots" content="noindex,nofollow">
 
     <!-- Required meta tags -->
@@ -20,7 +16,7 @@
     <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
 
     <link rel="stylesheet" href="assets/css/lightbox.css">
-    <link rel="stylesheet" href="assets/css/lightbox.min.css">
+
 
     <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="assets/css/Ramezanzadeh.css">
@@ -79,7 +75,7 @@
 
         <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="sabioweb_main_nav">
             <div class="flex-fill">
-                <ul id="primarymenu" class="nav navbar-nav d-flex justify-content-center mx-lg-auto">
+                <ul id="" class="nav navbar-nav d-flex justify-content-center mx-lg-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('home') }}">خانه</a>
                     </li>
@@ -95,23 +91,24 @@
                 </ul>
             </div>
             <div class="navbar align-self-center d-flex">
-                <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
-                        <div class="input-group-text">
-                            <i class="fa fa-fw fa-search"></i>
-                        </div>
-                    </div>
-                </div>
-                <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#sabioweb_search">
-                    <i class="fa fa-fw fa-search text-dark m-1"></i>
-                </a>
-                <a class="nav-icon position-relative text-decoration-none" href="#">
-                    <i class="fa fa-fw fa-cart-arrow-down text-dark m-1"></i>
-                </a>
-                <a class="nav-icon position-relative text-decoration-none" href="#">
-                    <i class="fa fa-fw fa-user text-dark m-1"></i>
-                 </a>
+{{--                <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">--}}
+{{--                    <div class="input-group">--}}
+{{--                        <input type="text" class="form-control" id="inputMobileSearch" placeholder="جست و جو ...">--}}
+{{--                        <div class="input-group-text">--}}
+{{--                            <i class="fa fa-fw fa-search"></i>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#sabioweb_search">--}}
+{{--                    <i class="fa fa-fw fa-search text-dark m-1"></i>--}}
+{{--                </a>--}}
+                <span class="p-lg-2">
+               <a class="btn btn-outline-dark" href="tel:02133138164">تماس</a>
+                    </span>
+                <span class="p-lg-2">
+                    <a class="btn btn-outline-dark" href="tel:02133138164">لاگین</a>
+                    </span>
+
             </div>
         </div>
 
