@@ -5,430 +5,654 @@
 @endsection
 @section("content")
 
+    {{--<div class="mainsl">
 
-    <!-- Modal -->
-    <div class="modal fade bg-white" id="sabioweb_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="w-100 pt-1 mb-5 text-right">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- Don't wrap targets in parent -->
+        <s id="s1"></s>
+        <s id="s2"></s>
+        <s id="s3"></s>
+        <s id="s4"></s>
+
+        <div
+            class="mainslider">
+            <div
+                style="">
+                <img
+                    src="{{
+                     asset
+                     ('assets/img/slider/slider1.3.jpg') }}" alt="Image" class="img-fluid"  >
             </div>
-            <form action="" method="get" class="modal-content modal-body border-0 p-0">
-                <div class="input-group mb-2">
-                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="جست و جو">
-                    <button type="submit" class="input-group-text bg-success text-light">
-                        <i class="fa fa-fw fa-search text-white"></i>
-                    </button>
+            <div>
+                <img
+                    src="{{
+                     asset
+                     ('assets/img/slider/slider1.4.jpg') }}" alt="Image" class="img-fluid"  >            </div>
+            <div>
+                <img
+                    src="{{
+                     asset
+                     ('assets/img/slider/slider1.5.jpg') }}" alt="Image" class="img-fluid"  >
+            </div>
+            <div>
+                <h2>Slide 4</h2>
+            </div>
+        </div>
+
+        <div class="prevNext">
+            <div><a href="#s4"></a><a href="#s2"></a></div>
+            <div><a href="#s1"></a><a href="#s3"></a></div>
+            <div><a href="#s2"></a><a href="#s4"></a></div>
+            <div><a href="#s3"></a><a href="#s1"></a></div>
+        </div>
+
+        <div class="bullets">
+            <a href="#s1">1</a>
+            <a href="#s2">2</a>
+            <a href="#s3">3</a>
+            <a href="#s4">4</a>
+        </div>
+
+    </div>--}}
+
+    <!-- slider-main--------------------------->
+    <div class="slider-main-container d-block">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{{ asset('assets/img/slider/slider1.3.jpg') }}" class="d-block w-100" alt="...">
                 </div>
-            </form>
+                <div class="carousel-item">
+                    <img src="{{ asset('assets/img/slider/slider1.3.jpg') }}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ asset('assets/img/slider/slider1.3.jpg') }}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ asset('assets/img/slider/slider1.3.jpg') }}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ asset('assets/img/slider/slider1.3.jpg') }}" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+               data-slide="prev">
+                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+               data-slide="next">
+                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
-    <!-- Close Modal -->
+    <!-- about -->
+    <div class="about section section-4">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-5">
+                    <h2 class="font-weight-bold heading text-orange mb-4">
+                        درباره شرکت پوشش سازان نوین
+                    </h2>
+                    <p class="text-black-50">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
 
-    <!-- Start slider Hero -->
-    <div id="carouse" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item">
-                <img src="{{asset('assets/img/slider/slider1.1.png')}}" class="d-block w-100 vh-100" alt="">
+                    </p>
+                </div>
             </div>
-            <div class="carousel-item active">
-                <img src="{{asset('assets/img/slider/slider1.2.jpg')}}" class="d-block w-100 vh-100" alt="">
-            </div>
-            <div class="carousel-item">
-                <img src="{{asset('assets/img/slider/slider1.3.jpg')}}" class="d-block w-100 vh-100" alt="">
-            </div>
-            <div class="carousel-item">
-                <img src="{{asset('assets/img/slider/slider1.5.JPG')}}" class="d-block w-100 vh-100" alt="">
-            </div>
-            <div class="carousel-item">
-                <img src="{{asset('assets/img/slider/slider1.4.jpg')}}" class="d-block w-100 vh-100" alt="">
-            </div>
-        </div>
-    </div>
-{{--
-    <div id="sabiowebherocarousel" class="bg-dark" data-bs-ride="carousel ">
-                <div class="container">
-                    <div class="row text-white">
-                        <div class="mx-auto col-md-8  col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="/assets/img/slider_1.png" alt="">
+            <div class="row justify-content-between mb-5" dir="rtl">
+                <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2">
+                    <div class="img-about dots">
+                        <img src="{{ asset('assets/img/hero_bg_3.jpg') }}" alt="Image" class="img-fluid" >
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="row">
+                        <span class="h3">خدمات شرکت</span>
+                        <p>این یک نوشته آزمایشی است که به طراحان و برنامه نویسان کمک میکند تا این عزیزان با بهره گیری از این نوشته تستی و آزمایشی بتوانند نمونه تکمیل شده از پروژه و طرح خودشان را به کارفرما نمایش دهند، استفاده از این متن تستی می تواند سرعت پیشرفت پروژه را افزایش دهد، و طراحان به جای تایپ و نگارش متن می توانند تنها با یک کپی و پست این متن را در کادرهای مختلف جایگزین نمائید. این نوشته توسط سایت لورم ایپسوم فارسی نگاشته شده است.</p>
+                    </div>
+                    <div class="row" >
+                        <div class="d-flex feature-h">
+                            <span class="wrap-icon m-3">
+                                <span class="icon-home2"></span>
+                            </span>
+                            <div class="feature-text">
+                                <span class="heading text-orange" >لورم ایپسوم</span>
+                                <p class="text-black-50">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+
+                                </p>
+                            </div>
+
                         </div>
-                        <div class="col-md-4 col-lg-6 mb-0 d-flex align-items-center">
-                            <div class="text-align-left align-self-center">
-                                <h1 class="h1 text-primary"><b>رنگ صنعتی</b> پوشش سازان</h1>
-                                <h3 class="h2 text-secondary">زیبایی را با پوشش سازان کشف کنید!</h3>
-                                <p>
-                                    مداد رنگی ها مشغول بودند به جز مداد سفید، هیچکس به او کار نمیداد، همه میگفتند : تو به هیچ دردی نمیخوری، یک شب که مداد رنگی ها تو سیاهی شب گم شده بودند، مداد سفید تا صبح ماه کشید مهتاب کشید و انقدر ستاره کشید که کوچک و کوچکتر شد صبح توی جعبه مداد رنگی جای خالی او با هیچ رنگی  پر نشد، به یاد هم باشیم شاید فردا ما هم در کنار هم نباشیم…
-                                    طراح
-                                    <a rel="sponsored" class="text-primary" href="https://sabioweb.com" target="_blank" >دانا وب</a> می باشد.
+
+                        <div class="d-flex feature-h" dir="ltr">
+                            <span class="wrap-icon m-3">
+                               <span class="icon-person"></span>
+                  </span>
+                            <div class="feature-text" dir="rtl">
+                                <span class="heading text-orange">لورم ایپسوم</span>
+                                <p class="text-black-50">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+
                                 </p>
                             </div>
                         </div>
                     </div>
-                </div>
-    </div>
---}}
-    <!-- End slider Hero -->
 
-    <!-- start section 3 -->
-    <section id="contactsm" class=" bg-dark" style="margin-top: -5px">
-        <div class="container p-5 " >
-            <div class="row text-center text-secondary">
-                <div class="col-md-7">
-                    <h3 class="">برای کسب اطلاعات بیشتر در سایت جست و جو کنید</h3>
                 </div>
-                <div class="col-md-5 text-center d-inline">
-                    <form  method="get" class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="جست وجو" aria-label="جست وجو">
-                        <button class="btn btn-outline-primary" type="submit"><i class="fa fa-fw fa-search-plus"></i></button>
+            </div>
+
+        </div>
+    </div>
+    <!-- category -->
+    <div class="category section bg-light">
+        <div class="container">
+            <div class="row section-counter">
+                <h3 class="text-center">دسته بندی های شرکت پوشش سازان</h3>
+                <hr class="text-orange">
+                <div class="col-12 col-lg-4 mt-3" data-aos="fade-up">
+                    <div class="counter-wrap mb-5 shadow mb-lg-0">
+                        <img src="{{ asset('assets/img/section/industrial.jpg') }}" class="img-fluid">
+                        <span class="number">
+                                 <a href="#" class="text-primary">رنگ صنعتی</a>
+                             </span>
+                        <!--<a href="#" class="caption">بیشتر</a>-->
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mt-3" data-aos="fade-up">
+                    <div class="counter-wrap mb-5 shadow mb-lg-0">
+
+                        <!-- <span class="number">
+                             <span class="countup text-primary">2181</span>
+                         </span>-->
+                        <img src="{{ asset('assets/img/section/anticorossion.jpg') }}" class="img-fluid">
+                        <span class="number">
+                                <a href="#" class=" text-primary">رنگ ضد زنگ</a>
+                            </span>
+                        <!--<a href="#" class="caption">بیشتر</a>-->
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mt-3" data-aos="fade-up">
+                    <div class="counter-wrap mb-5 shadow mb-lg-0">
+                        <img src="{{ asset('assets/img/section/powder2.jpg') }}" class="img-fluid">
+
+                        <span class="number">
+                                <a href="#" class=" text-primary">رنگ پودری</a>
+                             </span>
+                        <!--<a href="#" class="caption">بیشتر</a>-->
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mt-3" data-aos="fade-up">
+                    <div class="counter-wrap mb-5 shadow mb-lg-0">
+                        <img src="{{ asset('assets/img/section/cat1.jpg') }}" class="img-fluid">
+                        <span class="number">
+                                <a href="#" class="text-primary">رنگ ساختمانی</a>
+                            </span>
+                        <!--<a href="#" class="caption">بیشتر</a>-->
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mt-3" data-aos="fade-up">
+                    <div class="counter-wrap mb-5 shadow mb-lg-0">
+                        <img src="{{ asset('assets/img/section/floor.jpg') }}" class="img-fluid">
+                        <span class="number">
+                                <a href="#" class="text-primary">رنگ زمین</a>
+                            </span>
+                        <!--<a href="#" class="caption">بیشتر</a>-->
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mt-3" data-aos="fade-up">
+                    <div class="counter-wrap mb-5 shadow mb-lg-0">
+                        <img src="{{ asset('assets/img/section/pipeline.jpg') }}" class="img-fluid">
+                        <span class="number">
+                                <a href="#" class="text-primary">رنگ لوله صنعتی</a>
+                            </span>
+                        <!--<a href="#" class="caption">بیشتر</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- products -->
+    <div id="products" class="section">
+        <div class="container">
+            <div class="row mb-5  text-center align-items-center" dir="rtl">
+                <div class="col-lg-6 ">
+                    <h2 class="font-weight-bold text-orange heading">
+                        محصولات اخیر
+                    </h2>
+                </div>
+                <div class="col-lg-6 text-lg-start">
+                    <p>
+                        <a
+                            href="#"
+                            target="_blank"
+                            class="btn btn-primary  py-3 px-4">تمامی محصولات</a>
+                    </p>
+                </div>
+                <hr class="text-orange">
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="products-slider-wrap">
+                        <div  class="products-slider">
+
+                            <div class="products-item">
+                                <a href="#" class="img">
+                                    <img src="{{ asset('assets/img/home/products/poudr/still-roz-gold.webp') }}" alt="Image" class="img-fluid"  >
+                                </a>
+
+                                <div class="products-content text-center">
+                                    <div class="price mb-2"><span>تومان 1,291,000</span></div>
+                                    <div>
+                                        <span class="d-block mb-2 text-black-50 text-end">رنگ پودری در صنایع کاربر زیادی دارد</span>
+                                        <span class="city d-block mb-3">رنگ پودری</span>
+
+
+                                        <!--<span>ویژگی محصول</span>
+                                      <div class="specs d-flex mb-4">
+                                        <span class="d-block d-flex align-items-center me-3">
+                                          <span class="icon-bed me-2"></span>
+                                          <span class="caption">2 beds</span>
+                                        </span>
+                                        <span class="d-block d-flex align-items-center">
+                                          <span class="icon-bath me-2"></span>
+                                          <span class="caption">2 baths</span>
+                                        </span>
+                                      </div>-->
+
+                                        <a href="#" class="btn btn-primary py-2 px-3"> مشاهده بیشتر</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .item -->
+
+                            <div class="products-item">
+                                <a href="#" class="img">
+                                    <img src="{{ asset('assets/img/home/products/poudr/blue.webp')  }}" alt="Image" class="img-fluid" >
+                                </a>
+
+                                <div class="products-content text-center">
+                                    <div class="price mb-2"><span>تومان 1,291,000</span></div>
+                                    <div>
+                                        <span class="d-block mb-2 text-black-50 text-end">رنگ پودری در صنایع کاربر زیادی دارد</span>
+                                        <span class="city d-block mb-3">رنگ پودری</span>
+
+
+                                        <!--<span>ویژگی محصول</span>
+                                      <div class="specs d-flex mb-4">
+                                        <span class="d-block d-flex align-items-center me-3">
+                                          <span class="icon-bed me-2"></span>
+                                          <span class="caption">2 beds</span>
+                                        </span>
+                                        <span class="d-block d-flex align-items-center">
+                                          <span class="icon-bath me-2"></span>
+                                          <span class="caption">2 baths</span>
+                                        </span>
+                                      </div>-->
+
+                                        <a href="#" class="btn btn-primary py-2 px-3"> مشاهده بیشتر</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .item -->
+
+                            <div class="products-item">
+                                <a href="#" class="img">
+                                    <img src="{{ asset('assets/img/home/products/poudr/blue.webp')}}" alt="Image" class="img-fluid" >
+                                </a>
+
+                                <div class="products-content text-center">
+                                    <div class="price mb-2"><span>تومان 1,291,000</span></div>
+                                    <div>
+                                        <span class="d-block mb-2 text-black-50 text-end">رنگ پودری در صنایع کاربر زیادی دارد</span>
+                                        <span class="city d-block mb-3">رنگ پودری</span>
+
+
+                                        <!--<span>ویژگی محصول</span>
+                                      <div class="specs d-flex mb-4">
+                                        <span class="d-block d-flex align-items-center me-3">
+                                          <span class="icon-bed me-2"></span>
+                                          <span class="caption">2 beds</span>
+                                        </span>
+                                        <span class="d-block d-flex align-items-center">
+                                          <span class="icon-bath me-2"></span>
+                                          <span class="caption">2 baths</span>
+                                        </span>
+                                      </div>-->
+
+                                        <a href="#" class="btn btn-primary py-2 px-3"> مشاهده بیشتر</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .item -->
+
+          {{--                  <div class="products-item">
+                                <a href="#" class="img">
+                                    <img src="../../../public/assets/themeIMG/home/products/poudr/still-bronze.webp" alt="Image" class="img-fluid" >
+                                </a>
+
+                                <div class="products-content text-center">
+                                    <div class="price mb-2"><span>تومان 1,291,000</span></div>
+                                    <div>
+                                        <span class="d-block mb-2 text-black-50 text-end">رنگ پودری در صنایع کاربر زیادی دارد</span>
+                                        <span class="city d-block mb-3">رنگ پودری</span>
+
+
+                                        <!--<span>ویژگی محصول</span>
+                                      <div class="specs d-flex mb-4">
+                                        <span class="d-block d-flex align-items-center me-3">
+                                          <span class="icon-bed me-2"></span>
+                                          <span class="caption">2 beds</span>
+                                        </span>
+                                        <span class="d-block d-flex align-items-center">
+                                          <span class="icon-bath me-2"></span>
+                                          <span class="caption">2 baths</span>
+                                        </span>
+                                      </div>-->
+
+                                        <a href="#" class="btn btn-primary py-2 px-3"> مشاهده بیشتر</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .item -->
+
+                            <div class="products-item">
+                                <a href="#" class="img">
+                                    <img src="../../../public/assets/themeIMG/home/products/poudr/pink.webp" alt="Image" class="img-fluid" >
+                                </a>
+
+                                <div class="products-content text-center">
+                                    <div class="price mb-2"><span>تومان 1,291,000</span></div>
+                                    <div>
+                                        <span class="d-block mb-2 text-black-50 text-end">رنگ پودری در صنایع کاربر زیادی دارد</span>
+                                        <span class="city d-block mb-3">رنگ پودری</span>
+
+
+                                        <!--<span>ویژگی محصول</span>
+                                      <div class="specs d-flex mb-4">
+                                        <span class="d-block d-flex align-items-center me-3">
+                                          <span class="icon-bed me-2"></span>
+                                          <span class="caption">2 beds</span>
+                                        </span>
+                                        <span class="d-block d-flex align-items-center">
+                                          <span class="icon-bath me-2"></span>
+                                          <span class="caption">2 baths</span>
+                                        </span>
+                                      </div>-->
+
+                                        <a href="#" class="btn btn-primary py-2 px-3"> مشاهده بیشتر</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .item -->
+
+                            <div class="products-item">
+                                <a href="#" class="img">
+                                    <img  src="../../../public/assets/themeIMG/home/products/poudr/purple.webp" alt="Image" class="img-fluid" >
+                                </a>
+
+                                <div class="products-content text-center">
+                                    <div class="price mb-2"><span>تومان 1,291,000</span></div>
+                                    <div>
+                                        <span class=" text-endd-block mb-2 text-black-50">رنگ پودری در صنایع کاربر زیادی دارد</span>
+                                        <span class="city d-block mb-3">رنگ پودری</span>
+
+
+                                        <!--<span>ویژگی محصول</span>
+                                      <div class="specs d-flex mb-4">
+                                        <span class="d-block d-flex align-items-center me-3">
+                                          <span class="icon-bed me-2"></span>
+                                          <span class="caption">2 beds</span>
+                                        </span>
+                                        <span class="d-block d-flex align-items-center">
+                                          <span class="icon-bath me-2"></span>
+                                          <span class="caption">2 baths</span>
+                                        </span>
+                                      </div>-->
+
+                                        <a href="#" class="btn btn-primary py-2 px-3"> مشاهده بیشتر</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .item -->
+
+                            <div class="products-item">
+                                <a href="#" class="img">
+                                    <img src="../../../public/assets/themeIMG/home/products/poudr/yellow.webp" alt="Image" class="img-fluid" >
+                                </a>
+
+                                <div class="products-content text-center">
+                                    <div class="price mb-2"><span>تومان 1,291,000</span></div>
+                                    <div>
+                                        <span class="d-block mb-2 text-black-50 text-end">رنگ پودری در صنایع کاربر زیادی دارد</span>
+                                        <span class="city d-block mb-3">رنگ پودری</span>
+
+                                        <!--<span>ویژگی محصول</span>
+                                      <div class="specs d-flex mb-4">
+                                        <span class="d-block d-flex align-items-center me-3">
+                                          <span class="icon-bed me-2"></span>
+                                          <span class="caption">2 beds</span>
+                                        </span>
+                                        <span class="d-block d-flex align-items-center">
+                                          <span class="icon-bath me-2"></span>
+                                          <span class="caption">2 baths</span>
+                                        </span>
+                                      </div>-->
+
+                                        <a href="#" class="btn btn-primary py-2 px-3"> مشاهده بیشتر</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .item -->
+
+                            <div class="products-item">
+                                <a href="#" class="img">
+                                    <img src="../../../public/assets/themeIMG/home/products/poudr/red.webp" alt="Image" class="img-fluid" >
+                                </a>
+
+                                <div class="products-content text-center">
+                                    <div class="price mb-2"><span>تومان 1,291,000</span></div>
+                                    <div>
+                                        <span class="d-block mb-2 text-black-50 text-end">رنگ پودری در صنایع کاربر زیادی دارد</span>
+                                        <span class="city d-block mb-3">رنگ پودری</span>
+
+
+                                        <!--<span>ویژگی محصول</span>
+                                      <div class="specs d-flex mb-4">
+                                        <span class="d-block d-flex align-items-center me-3">
+                                          <span class="icon-bed me-2"></span>
+                                          <span class="caption">2 beds</span>
+                                        </span>
+                                        <span class="d-block d-flex align-items-center">
+                                          <span class="icon-bath me-2"></span>
+                                          <span class="caption">2 baths</span>
+                                        </span>
+                                      </div>-->
+
+                                        <a href="#" class="btn btn-primary py-2 px-3"> مشاهده بیشتر</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .item -->
+
+                            <div class="products-item">
+                                <a href="#" class="img">
+                                    <img src="../../../public/assets/themeIMG/home/products/poudr/still-roz-gold.webp" alt="Image" class="img-fluid" >
+                                </a>
+
+                                <div class="products-content text-center">
+                                    <div class="price mb-2"><span>تومان 1,291,000</span></div>
+                                    <div>
+                                        <span class="d-block mb-2 text-black-50 text-end">رنگ پودری در صنایع کاربر زیادی دارد</span>
+                                        <span class="city d-block mb-3">رنگ پودری</span>
+
+
+                                        <!--<span>ویژگی محصول</span>
+                                      <div class="specs d-flex mb-4">
+                                        <span class="d-block d-flex align-items-center me-3">
+                                          <span class="icon-bed me-2"></span>
+                                          <span class="caption">2 beds</span>
+                                        </span>
+                                        <span class="d-block d-flex align-items-center">
+                                          <span class="icon-bath me-2"></span>
+                                          <span class="caption">2 baths</span>
+                                        </span>
+                                      </div>-->
+
+                                        <a href="#" class="btn btn-primary py-2 px-3"> مشاهده بیشتر</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .item -->--}}
+                        </div>
+
+                        <div
+                            id="products-nav"
+                            class="controls"
+                            tabindex="0"
+                            aria-label="Carousel Navigation">
+                    <span class="prev"
+                          data-controls="prev"
+                          aria-controls="property"
+                          tabindex="-1">قبلی</span>
+                            <span class="next"
+                                  data-controls="next"
+                                  aria-controls="property"
+                                  tabindex="-1">بعدی</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- gallery -->
+    <div class="slider-gallery bg-light">
+        <h3 class="text-orange mb-5">گالری نمونه کار ها</h3>
+
+        <div class="gallery">
+
+            <div class="innerContainer gallery-active">
+                <div class="slider">
+                    <div class="slide">
+                        <div style="background:url('{{ asset('assets/img/section/pipeline.jpg')}}')"></div>
+                    </div>
+                    <div class="slide">
+                        <div style="background:url('{{ asset('assets/img/section/powder2.jpg')}}')"></div>
+                    </div>
+                    <div class="slide">
+                        <div style="background:url('{{ asset('assets/img/section/anticorossion.jpg')}}')"></div>
+                    </div>
+                    <div class="slide">
+                        <div style="background:url('{{ asset('assets/img/section/cat1.jpg')}}')"></div>
+                    </div>
+                    <div class="slide">
+                        <div style="background:url('{{ asset('assets/img/section/industrial.jpg')}}')"></div>
+                    </div>
+                    <div class="slide">
+                        <div style="background:url('{{ asset('assets/img/section/cat3.jpg')}}')"></div>
+                    </div>
+
+                </div>
+
+                <div class="handles">
+          <span class="prev">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.0001 19.92L8.48009 13.4C7.71009 12.63 7.71009 11.37 8.48009 10.6L15.0001 4.07999" stroke="rgb(55 65 81/1)" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </span>
+                    <span class="next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.99991 19.92L15.5199 13.4C16.2899 12.63 16.2899 11.37 15.5199 10.6L8.99991 4.07999" stroke="rgb(55 65 81/1)" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </span>
+                </div>
+                <div class="dots">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact & faQ  -->
+    <div class="section">
+        <div class="container">
+            <div class="row" dir="rtl">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="mb-md-5">سوالات متداول</h4>
+                    <div class="faq">
+                        <button class="accordion text-end ">سوال اول</button>
+                        <div class="panel p-3">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                        </div>
+
+                        <button class="accordion text-end">سوال دوم</button>
+                        <div class="panel p-3">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                        </div>
+
+                        <button class="accordion text-end">سوال سوم</button>
+                        <div class="panel p-3">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <form action="#">
+                        <div class="row">
+                            <h4 class="mb-md-5">فرم تماس با ما</h4>
+
+                            <div class="col-6 mb-3">
+                                <input type="text" class="form-control" placeholder="نام و نام خانوادگی">
+                            </div>
+                            <div class="col-6 mb-3">
+                                <input type="email" class="form-control" placeholder="ایمیل">
+                            </div>
+                            <div class="col-12 mb-3">
+                                <input type="text" class="form-control" placeholder="موضوع">
+                            </div>
+                            <div class="col-12 mb-3">
+                                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="پیام شما"></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <input type="submit" value="ارسال" class="btn btn-primary">
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- end section 3 -->
-
-
-    {{-- test section--}}
-    <section id="cotn">
-    <div class="container text-center p-5 ">
-        <div class="row justify-content-start">
-            <div class="col-6">
-                <div class="card card-ts-1 shadow mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                            <div class="card-body">
-                                <h3 class="card-title">رنگ اکریلیک</h3>
-                                <p class="card-text">رنگ اکریلیک انعطاف‌پذیر است و به همین علت روی تمام سطوح از جمله مدل‌های خمیر، کاغذ، پارچه و کفش قابل استفاده است. رنگ‌های اکریلیک پایه آب نسل جدید از رنگ‌های ساختمانی می‌باشند که با توجه به مسائل زیست‌محیطی و عدم استفاده از حلال‌های آلی و مواد مضر کاربردی این نوع رنگ‌ها روبه افزایش است.</p>
-                                <p class="card-text"><small class="text-body-secondary"><a class="btn btn-outline-primary">ادامه مطلب</a></small></p>
-                            </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-
-            </div>
-        </div>
-        <div class="row justify-content-end">
-            <div class="col-6">
-            </div>
-            <div class="col-6">
-                <div class="card card-ts-2 shadow mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="card-body">
-                            <h3 class="card-title">رنگ اپوکسی</h3>
-                            <p class="card-text">رنگ اپوکسی یک نوع رنگ صنعتی است که از ترکیب دو ماده شیمیایی اپوکسی و هاردنر تشکیل می‌شود. این رنگ پس از خشک شدن، یک پوشش سخت و محکم ایجاد می‌کند که در برابر مواد شیمیایی، آب، سایش و ضربه مقاوم است. رنگ اپوکسی کاربردهای مختلفی دارد.</p>
-                            <p class="card-text"><small class="text-body-secondary"><a class="btn btn-outline-primary">ادامه مطلب</a></small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-start">
-            <div class="col-6">
-                <div class="card card-ts-3 shadow mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="card-body">
-                            <h3 class="card-title">رنگ وینیلی</h3>
-                            <p class="card-text">محصول رنگ رویه وینیلی یک رنگ رویه یک جزیی محافظ خوردگی بر پایه رزین وینیل کلراید می باشد . خشک شدن سریع و راحتی کاربرد با ابزار مختلف از مشخصه های بارز کاربردی این رنگ می باشد . رنگ رویه وینیلی با توجه به ساختار و ترکیب خود محافظت های فوق العاده بر روی سطوح بخوبی آماده سازی شده در محیط های صنعتی و دریایی ایجاد می کند .</p>
-                            <p class="card-text"><small class="text-body-secondary"><a class="btn btn-outline-primary">ادامه مطلب</a></small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-
-            </div>
-        </div>
-        <div class="row justify-content-end">
-            <div class="col-6">
-            </div>
-            <div class="col-6">
-                <div class="card card-ts-4 shadow mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="card-body">
-                            <h3 class="card-title">رنگ پلی اورتان</h3>
-                            <p class="card-text">رنگ پلی اورتان عضوی از خانواده رنگ‌های صنعتی است. این رنگ دارای ساختار پلیمری بوده و ضمن باکیفیت بودن، مقاومت بالایی هم دارد و برای پوشش دادن سطوح مختلف از آن به طور گسترده‌ای استفاده ‌می‌شود. عموما رنگ‌های پلی اورتان به شکل روکش نهایی روی پرایمرها (روکش اولیه) قرار گرفته و ساختاری یکدست با مقاومت بالا را ایجاد می کند.</p>
-                            <p class="card-text"><small class="text-body-secondary"><a class="btn btn-outline-primary">ادامه مطلب</a></small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-    </section>
-    {{-- test section --}}
 
-    <!-- start section 2 -->
-    <section id="cp" class="mt-5">
-        <div class="container">
-            <div class="row text-center">
-                <h3 class="text-primary">انواع رنگ ها</h3>
-                <hr class="text-secondary pb-3 bar">
-                <div class="col-md-6 col-lg-4  service-paint p-3" >
-                    <a href="#" class="text-decoration-none ">
-                        <div class="card shadow" style="width: 18rem;">
-                            <img src="{{ asset('/assets/img/section2/anticorossion.jpg') }}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h4 class="card-text paint-text " style="font-size: 17px !important;">پوشش های محافظتی ضد خوردگی</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4  service-paint p-3" >
-                    <a href="#" class="text-decoration-none">
-                        <div class="card shadow" style="width: 18rem;">
-                            <img src="{{ asset('/assets/img/section2/cat3.jpg') }}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h4 class="card-text paint-text" style="font-size: 17px !important;">پوشش های کف</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4  service-paint p-3" >
-                    <a href="#" class="text-decoration-none">
-                        <div class="card shadow" style="width: 18rem;">
-                            <img src="{{ asset('/assets/img/section2/cat2.jpg') }}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h4 class="card-text paint-text" style="font-size: 17px !important;">پوشش های صنعتی</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4  service-paint p-3" >
-                    <a href="#" class="text-decoration-none">
-                        <div class="card shadow" style="width: 18rem;">
-                            <img src="{{ asset('/assets/img/section2/pipeline.jpg') }}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h4 class="card-text paint-text" style="font-size: 17px !important;">پوشش های مخصوص لوله</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
 
-                <div class="col-md-6 col-lg-4  service-paint p-3" >
-                    <a href="#" class="text-decoration-none">
-                        <div class="card shadow" style="width: 18rem;">
-                            <img src="{{ asset('/assets/img/section2/cat1.jpg') }}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h4 class="card-text paint-text" style="font-size: 17px !important;">پوشش های دریایی</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4  service-paint p-3" >
-                    <a href="#" class="text-decoration-none">
-                        <div class="card shadow" style="width: 18rem;">
-                            <img src="{{ asset('/assets/img/section2/industrial.jpg') }}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h4 class="card-text paint-text" style="font-size: 17px !important;">رنگ های ساختمانی</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+
+    <!-- fixed catalog button   -->
+    <div class='download-catalog'>
+        <a class="btn">دانلود کاتالوگ</a>
+    </div>
+    <!-- fixed contact button   -->
+    <div class='contact-action'>
+        <div class='item' onclick="actionToggle();"> <i class="icon-help"></i> </div>
+        <span class='item'><img class="img-fluid" src="{{ asset('assets/img/icons/telegram.webp') }}"></span>
+        <span class='item'><img class="img-fluid" src="{{ asset('assets/img/icons/call.png') }}"> </span>
+        <span  class='item' onclick="topFbtn()" id="topbtn" title="Go to top"> <i class="icon-arrow-up"></i> </span>
+        <span class='item d-none d-md-flex '><img class="img-fluid" src="{{ asset('assets/img/icons/whatsapp.webp') }}"> </span>
+    </div>
 
 
 
 
-            </div>
-        </div>
-    </section>
-    <!-- end section 2 -->
-
-    <!-- start section 3 -->
-    <section id="contactsm" class="mt-3 mb-3 bg-dark">
-        <div class="container p-5">
-        <div class="row text-center text-secondary">
-                <div class="col-md-9">
-                    <h3 class="">برای دریافت مشاوره روی دکمه رو به رو کلیک کنید</h3>
-                </div>
-                <div class="col-md-3 text-center">
-                    <a href="tel:02133138164" class="btn btn-outline-primary ">تماس بگیرید</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end section 3 -->
-
-    <!-- start section 4 -->
-    <section id="aboutsm" class="mt-5 mb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-6">
-                    <img class="img-fluid" src="{{ asset('assets/img/about/about-us.jpg') }}" alt="">
-                </div>
-                <div class="col-md-6 col-lg-6 p-5 text-start align-self-center">
-                    <h4 class="fw-bold text-primary">شرکت رنگ صنعتی پوشش سازان</h4>
-                    <hr class="bar">
-                    <p class=""> این یک نوشته آزمایشی است که به طراحان و برنامه نویسان کمک میکند تا این عزیزان با بهره گیری از این نوشته تستی و آزمایشی بتوانند نمونه تکمیل شده از پروژه و طرح خودشان را به کارفرما نمایش دهند، استفاده از این متن تستی می تواند سرعت پیشرفت پروژه را افزایش دهد، و طراحان به جای تایپ و نگارش متن می توانند تنها با یک کپی و پست این متن را در کادرهای مختلف جایگزین نمائید. این نوشته توسط سایت لورم ایپسوم فارسی نگاشته شده است.
-                    </p>
-                    <div class="text-end">
-                        <a href="tel:02133138164" class="btn btn-outline-info text-dark">درباره ما</a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end section 4 -->
-
-    <!-- start section 5 -->
-    <section id="banershome">
-        <div class="container p-5">
-            <div class="row p-2 align-items-center">
-                <h4 class="text-center text-primary">
-                    بنر های سایت
-                </h4>
-                <hr class="text-secondary">
-                <div class="col-md-3 col-lg-3 p-1">
-                    <a href="#" >
-                        <img class="img-fluid bg-primary-subtle p-0 m-0" src="{{ asset('assets/img/SabioWeb/baner1.png  ') }}" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-lg-3 p-1">
-                   <a href="#" >
-                       <img class="img-fluid bg-primary-subtle p-0 m-0" src="{{ asset('assets/img/SabioWeb/tbanner1.jpg  ') }}" alt="">
-                   </a>
-                </div>
-                <div class="col-md-3 col-lg-3 p-1">
-                    <a href="#" >
-                        <img class="img-fluid bg-primary-subtle p-0 m-0" src="{{ asset('assets/img/SabioWeb/baner1.png  ') }}" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-lg-3 p-1">
-                    <a href="#" >
-                        <img class="img-fluid bg-primary-subtle p-0 m-0" src="{{ asset('assets/img/SabioWeb/tbanner2.jpg  ') }}" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end section 5 -->
-
-    <!-- Gallery Start -->
-    <section id="gallery" class="pb-1">
-        <div class="container-xxl pt-5">
-            <div class="container">
-                <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                    <p class="section-title bg-white text-center text-secondary px-3">گالری</p>
-                    <h3 class="text-primary">نمونه کارهای مجموعه</h3>
-                    <hr class="text-secondary mb-5">
-                </div>
-                <div class="row g-0">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="row g-0">
-                            <div class="col-12">
-                                <a class="d-block" href="{{ asset('assets/img/section2/decorative.jpg') }}" data-lightbox="gallery">
-                                    <img class="img-fluid" src="{{ asset('assets/img/section2/decorative.jpg') }}" alt="">
-                                </a>
-                            </div>
-                            <div class="col-12">
-                                <a class="d-block" href="{{ asset('assets/img/section2/anticorossion.jpg') }}" data-lightbox="gallery">
-                                    <img class="img-fluid" src="{{ asset('assets/img/section2/anticorossion.jpg') }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="row g-0">
-                            <div class="col-12">
-                                <a class="d-block" href="{{ asset('assets/img/section2/floor.jpg') }}" data-lightbox="gallery">
-                                    <img class="img-fluid" src="{{ asset('assets/img/section2/floor.jpg') }}" alt="">
-                                </a>
-                            </div>
-                            <div class="col-12">
-                                <a class="d-block" href="{{ asset('assets/img/section2/pipeline.jpg') }}" data-lightbox="gallery">
-                                    <img class="img-fluid" src="{{ asset('assets/img/section2/pipeline.jpg') }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="row g-0">
-                            <div class="col-12">
-                                <a class="d-block" href="{{ asset('assets/img/section2/powder2.jpg') }}" data-lightbox="gallery">
-                                    <img class="img-fluid" src="{{ asset('assets/img/section2/powder2.jpg') }}" alt="">
-                                </a>
-                            </div>
-                            <div class="col-12">
-                                <a class="d-block" href="{{ asset('assets/img/section2/industrial.jpg') }}" data-lightbox="gallery">
-                                    <img class="img-fluid" src="{{ asset('assets/img/section2/industrial.jpg') }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="row g-0">
-                            <div class="col-12">
-                                <a class="d-block" href="{{ asset('assets/img/section2/anticorossion.jpg') }}" data-lightbox="gallery">
-                                    <img class="img-fluid" src="{{ asset('assets/img/section2/anticorossion.jpg') }}" alt="">
-                                </a>
-                            </div>
-                            <div class="col-12">
-                                <a class="d-block" href="{{ asset('assets/img/section2/powder2.jpg') }}" data-lightbox="gallery">
-                                    <img class="img-fluid" src="{{ asset('assets/img/section2/powder2.jpg') }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Gallery End -->
-
-    <!-- start ontact us Area ( home section 5 ) -->
-    <section class="contact-area pt-5 pb-3 text-center">
-        <div class="container">
-            <div class="section-title">
-                <h3 class="text-primary">تماس با ما</h3>
-                <hr class="text-secondary"></hr>
-                <p> هرگونه پیشنهاد را با ما درمیان بگذارید</p>
-            </div>
-
-            <div class="row p-lg-5">
-                <div class="col-lg-5 col-md-12 align-self-center">
-                    <div class="contact-info">
-                        <ul>
-                            <li>
-                                <div class="icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <span>آدرس</span>
-                                اتوبان  - ناکجا - ساختمان - پلاک 37 - طبقه
-                            </li>
-
-                            <li>
-                                <div class="icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <span>پست الکترونیک</span>
-                                <a href="#">support@Posheshsazan.com</a>
-                            </li>
-
-                            <li>
-                                <div class="icon">
-                                    <i class="fas fa-phone-volume"></i>
-                                </div>
-                                <span>تلفن</span>
-                                <a href="tel:02135868">021-35868</a>
-
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-7 col-md-12">
-                    <div class="w-75">
-                        <br>
-                        {{--<img class="img-fluid" src="{{ asset('assets/img/contact2.png') }}" alt="">--}}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end contact us Area ( home section 5 ) -->
 
 @endsection
 
-@section('src')
+@section("src")
+<script>
 
+</script>
 @endsection
