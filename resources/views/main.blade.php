@@ -53,9 +53,22 @@
         </div>
 
     </div>--}}
-
+    <!-- Start slider Hero -->
+    <div id="carouse" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{asset('assets/img/slider/slider1.5.jpg')}}" class="d-block w-100 vh-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('assets/img/slider/slider1.3.jpg')}}" class="d-block w-100 vh-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('assets/img/slider/slider1.4.jpg')}}" class="d-block w-100 vh-100" alt="">
+            </div>
+        </div>
+    </div>
     <!-- slider-main--------------------------->
-    <div class="slider-main-container d-block">
+    {{--<div class="slider-main-container d-block">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -81,7 +94,7 @@
                     <img src="{{ asset('assets/img/slider/slider1.3.jpg') }}" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+      --}}{{--      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
                data-slide="prev">
                 <span class="fa fa-angle-left" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
@@ -90,9 +103,9 @@
                data-slide="next">
                 <span class="fa fa-angle-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
-            </a>
+            </a>--}}{{--
         </div>
-    </div>
+    </div>--}}
     <!-- about -->
     <div class="about section section-4">
         <div class="container">

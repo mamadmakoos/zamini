@@ -111,7 +111,7 @@
 
 
 <!-- Start Script -->
-<script src="{{ asset('assets/js/bootstrap.bundle.min.js')}}"></script>
+{{--<script src="{{ asset('assets/js/bootstrap.bundle.min.js')}}"></script>--}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
 <script src="{{ asset('assets/js/aos.js')}}"></script>
 <script src="{{ asset('assets/js/owl.carousel.min.js')}}"></script>
