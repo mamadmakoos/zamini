@@ -171,7 +171,7 @@
             <div class="row section-counter">
                 <h3 class="text-center">دسته بندی های شرکت پوشش سازان</h3>
                 <hr class="text-orange">
-                <div class="col-12 col-lg-4 mt-3" data-aos="fade-up">
+                <div class="col-md-6 col-lg-4 mt-3" data-aos="fade-up">
                     <div class="counter-wrap mb-5 shadow mb-lg-0">
                         <img src="{{ asset('assets/img/section/industrial.jpg') }}" class="img-fluid">
                         <span class="number">
@@ -180,7 +180,7 @@
                         <!--<a href="#" class="caption">بیشتر</a>-->
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 mt-3" data-aos="fade-up">
+                <div class="col-md-6 col-lg-4 mt-3" data-aos="fade-up">
                     <div class="counter-wrap mb-5 shadow mb-lg-0">
 
                         <!-- <span class="number">
@@ -193,7 +193,7 @@
                         <!--<a href="#" class="caption">بیشتر</a>-->
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 mt-3" data-aos="fade-up">
+                <div class="col-md-6 col-lg-4 mt-3" data-aos="fade-up">
                     <div class="counter-wrap mb-5 shadow mb-lg-0">
                         <img src="{{ asset('assets/img/section/powder2.jpg') }}" class="img-fluid">
 
@@ -203,7 +203,7 @@
                         <!--<a href="#" class="caption">بیشتر</a>-->
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 mt-3" data-aos="fade-up">
+                <div class="col-md-6 col-lg-4 mt-3" data-aos="fade-up">
                     <div class="counter-wrap mb-5 shadow mb-lg-0">
                         <img src="{{ asset('assets/img/section/cat1.jpg') }}" class="img-fluid">
                         <span class="number">
@@ -212,7 +212,7 @@
                         <!--<a href="#" class="caption">بیشتر</a>-->
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 mt-3" data-aos="fade-up">
+                <div class="col-md-6 col-lg-4 mt-3" data-aos="fade-up">
                     <div class="counter-wrap mb-5 shadow mb-lg-0">
                         <img src="{{ asset('assets/img/section/floor.jpg') }}" class="img-fluid">
                         <span class="number">
@@ -221,7 +221,7 @@
                         <!--<a href="#" class="caption">بیشتر</a>-->
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 mt-3" data-aos="fade-up">
+                <div class="col-md-6 col-lg-4 mt-3" data-aos="fade-up">
                     <div class="counter-wrap mb-5 shadow mb-lg-0">
                         <img src="{{ asset('assets/img/section/pipeline.jpg') }}" class="img-fluid">
                         <span class="number">
@@ -234,7 +234,7 @@
         </div>
     </div>
     <!-- products -->
-    <div id="products" class="section">
+    {{--<div id="products" class="section">
         <div class="container">
             <div class="row mb-5  text-center align-items-center" dir="rtl">
                 <div class="col-lg-6 ">
@@ -347,7 +347,7 @@
                             </div>
                             <!-- .item -->
 
-          {{--                  <div class="products-item">
+          --}}{{--                  <div class="products-item">
                                 <a href="#" class="img">
                                     <img src="../../../public/assets/themeIMG/home/products/poudr/still-bronze.webp" alt="Image" class="img-fluid" >
                                 </a>
@@ -524,7 +524,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- .item -->--}}
+                            <!-- .item -->--}}{{--
                         </div>
 
                         <div
@@ -545,7 +545,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>--}}
     <!-- gallery -->
     <div class="slider-gallery bg-light">
         <h3 class="text-orange mb-5">گالری نمونه کار ها</h3>

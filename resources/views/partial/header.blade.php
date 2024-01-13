@@ -106,6 +106,7 @@
                     <li><a href="#">سرویس</a></li>
                     <li><a href="#">درباره ما</a></li>
                     <li><a href="#">تماس باما</a></li>
+                    <li><a href="#">ورود</a></li>
                 </ul>
 
                 <a href="#" class="burger dark me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">

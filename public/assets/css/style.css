@@ -3090,7 +3090,10 @@ textarea.form-control-lg {
     --bs-position: end; }
     .dropdown-menu-sm-end[data-bs-popper] {
       right: 0;
-      left: auto; } }
+      left: auto; }
+
+
+}
 
 @media (min-width: 768px) {
   .dropdown-menu-md-start {
@@ -10397,7 +10400,9 @@ nav[aria-label="breadcrumb"] li:before {
   background: var(--mnbg);
   font-size: 14px;
   color: #888;
-  padding: 70px 0; }
+  padding: 70px 0;
+    direction: ltr;
+}
   .site-footer a {
     color: #777;
     position: relative;
@@ -10535,7 +10540,7 @@ nav[aria-label="breadcrumb"] li:before {
 /* buttom  */
 .contact-action {
     position: fixed;
-    bottom: 10%;
+    bottom: 5%;
     right: 10%;
     width: 60px;
     height: 60px;
@@ -10963,4 +10968,18 @@ position: relative;
 
 .slider-container > .tns-outer > .tns-nav {
     display: none;
+}
+
+#goftino_w{
+    bottom: 10% ;
+}
+@media (max-width: 425px) {
+    .contact-action {
+        right: 30%;
+        bottom: 6%;
+    }
+    /* goftino */
+    #goftino_w{
+        right: 0% !important;
+    }
 }

@@ -4,7 +4,7 @@
 
 
 	AOS.init({
-		duration: 800,
+		duration: 600,
 		easing: 'slide',
 		once: true
 	});
@@ -33,7 +33,7 @@
 	preloader();
 
 
-	var tinySdlier = function() {
+	/*var tinySdlier = function() {
 
 		var heroSlider = document.querySelectorAll('.hero-slide');
 		var propertySlider = document.querySelectorAll('.products-slider');
@@ -121,8 +121,10 @@
 			});
 		}
 	}
-	tinySdlier();
+	tinySdlier();*/
 
 
+
+        !function(){var i="d5qP0V",a=window,d=document;function g(){var g=d.createElement("script"),s="https://www.goftino.com/widget/"+i,l=localStorage.getItem("goftino_"+i);g.async=!0,g.src=l?s+"?o="+l:s;d.getElementsByTagName("head")[0].appendChild(g);}"complete"===d.readyState?g():a.attachEvent?a.attachEvent("onload",g):a.addEventListener("load",g,!1);}();
 
 })()
